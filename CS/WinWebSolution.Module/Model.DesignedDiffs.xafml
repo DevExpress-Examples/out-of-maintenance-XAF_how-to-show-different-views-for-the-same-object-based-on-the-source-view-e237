@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="WinWebSolution" Logo="ExpressAppLogo">
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="17.1.6.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="Consumer_Transactions_ListView" DetailViewID="Transaction_DetailView_FromConsumer" />
+    <ListView Id="Producer_Transactions_ListView" DetailViewID="Transaction_DetailView_FromProducer" />
+    <DetailView Id="Transaction_DetailView_FromConsumer" ClassName="WinWebSolution.Module.Transaction" IsNewNode="True">
+      <Items IsNewNode="True">
+        <PropertyEditor Id="Amount" PropertyName="Amount" IsNewNode="True" />
+        <PropertyEditor Id="Producer" PropertyName="Producer" IsNewNode="True" />
+        <PropertyEditor Id="Product" PropertyName="Product" IsNewNode="True" />
+      </Items>
+      <Layout IsNewNode="True">
+        <LayoutGroup Id="Main" Index="0" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" IsNewNode="True">
+            <LayoutGroup Id="Transaction" Index="0" IsNewNode="True">
+              <LayoutItem Id="Producer" Index="0" ViewItem="Producer" IsNewNode="True" />
+              <LayoutItem Id="Product" Index="2" ViewItem="Product" IsNewNode="True" />
+              <LayoutItem Id="Amount" Index="3" ViewItem="Amount" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Transaction_DetailView_FromProducer" ClassName="WinWebSolution.Module.Transaction" IsNewNode="True">
+      <Items IsNewNode="True">
+        <PropertyEditor Id="Amount" PropertyName="Amount" IsNewNode="True" />
+        <PropertyEditor Id="Consumer" PropertyName="Consumer" IsNewNode="True" />
+        <PropertyEditor Id="Product" PropertyName="Product" IsNewNode="True" />
+      </Items>
+      <Layout IsNewNode="True">
+        <LayoutGroup Id="Main" Index="0" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" IsNewNode="True">
+            <LayoutGroup Id="Transaction" Index="0" IsNewNode="True">
+              <LayoutItem Id="Consumer" Index="1" ViewItem="Consumer" IsNewNode="True" />
+              <LayoutItem Id="Product" Index="2" ViewItem="Product" IsNewNode="True" />
+              <LayoutItem Id="Amount" Index="3" ViewItem="Amount" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
