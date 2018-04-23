@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="WinWebSolution" Logo="ExpressAppLogo">
+  <Views>
+    <DetailView Id="Transaction_DetailView_FromConsumer" IsNewNode="True" ClassName="WinWebSolution.Module.Transaction">
+      <Items IsNewNode="True">
+        <PropertyEditor Id="Amount" IsNewNode="True" PropertyName="Amount" />
+        <PropertyEditor Id="Producer" IsNewNode="True" PropertyName="Producer" />
+        <PropertyEditor Id="Product" IsNewNode="True" PropertyName="Product" />
+      </Items>
+      <Layout IsNewNode="True">
+        <LayoutGroup Id="Main" IsNewNode="True" Index="0">
+          <LayoutGroup Id="SimpleEditors" IsNewNode="True" Index="0">
+            <LayoutGroup Id="Transaction" IsNewNode="True" Index="0">
+              <LayoutItem Id="Producer" IsNewNode="True" Index="0" />
+              <LayoutItem Id="Product" IsNewNode="True" Index="2" />
+              <LayoutItem Id="Amount" IsNewNode="True" Index="3" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Transaction_DetailView_FromProducer" IsNewNode="True" ClassName="WinWebSolution.Module.Transaction">
+      <Items IsNewNode="True">
+        <PropertyEditor Id="Amount" IsNewNode="True" PropertyName="Amount" />
+        <PropertyEditor Id="Consumer" IsNewNode="True" PropertyName="Consumer" />
+        <PropertyEditor Id="Product" IsNewNode="True" PropertyName="Product" />
+      </Items>
+      <Layout IsNewNode="True">
+        <LayoutGroup Id="Main" IsNewNode="True" Index="0">
+          <LayoutGroup Id="SimpleEditors" IsNewNode="True" Index="0">
+            <LayoutGroup Id="Transaction" IsNewNode="True" Index="0">
+              <LayoutItem Id="Consumer" IsNewNode="True" Index="1" />
+              <LayoutItem Id="Product" IsNewNode="True" Index="2" />
+              <LayoutItem Id="Amount" IsNewNode="True" Index="3" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
