@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [BO.cs](./CS/WinWebSolution.Module/BO.cs) (VB: [BO.vb](./VB/WinWebSolution.Module/BO.vb))
+* [Controller.cs](./CS/WinWebSolution.Module/Controller.cs) (VB: [Controller.vb](./VB/WinWebSolution.Module/Controller.vb))
+<!-- default file list end -->
 # How to Show different views for the same object, based on the source view
 
 
